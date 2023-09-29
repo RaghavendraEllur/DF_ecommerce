@@ -1,0 +1,151 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner_slider %}
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/a1.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/a2.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/a3.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/a4.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+  </div>
+{% endblock banner_slider %}
+
+{% block information %}
+<div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">Terms of Offer. This Website offers for sale certain products (the “Products”). By placing an order for Products through this Website, you agree to the terms set forth in this Agreement. Customer Solicitation: Unless you notify our third party call center reps or direct Dry Fruits Traders India Pvt Ltd sales reps, while they are calling you, of your desire to opt out from further direct company communications and solicitations, you are agreeing to continue to receive further emails and call solicitations Dry Fruits Traders India Pvt Ltd and its designated in house or third party call team(s).
+          Proprietary Rights. Dry Fruits Traders India Pvt Ltd has proprietary rights and trade secrets in the Products. You may not copy, reproduce, resell or redistribute any Product manufactured and/or distributed by Dry Fruits Traders India Pvt Ltd. Dry Fruits Traders India Pvt Ltd also has rights to all trademarks and trade dress and specific layouts of this webpage, including calls to action, text placement, images and other information. Sales Tax. If you purchase any Products, you will be responsible for paying any applicable sales tax.
+        </small>
+    </div>
+    <br><br>
+{% endblock information%}
+
+{% block main-content %}
+    <div class="container">
+        <h2 class="text-center">Dairy Products</h2>
+        <br><br>
+      <div class="row container">
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+              <div class="goodnesssec buttermilk smbg">
+                  <a href="{% url 'category' 'AL' %}">
+                      <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/product/Almond.png' %}" class="img-responsive center-block" alt="">
+                        <p class="mlkpro">Almond</p>
+                      </div> 
+                  </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+              <div class="goodnesssec buttermilk buttermilk">
+                  <a href="{% url 'category' 'AP' %}">
+                      <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/product/Apricot.jpg' %}" class="img-responsive center-block" alt="">
+                        <p class="mlkpro">Apricot</p>
+                      </div> 
+                  </a>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+              <div class="goodnesssec buttermilk curdbgpro">
+                  <a href="{% url 'category' 'CA' %}">
+                      <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/product/Cashew.jpg' %}" class="img-responsive center-block" alt="">
+                        <p class="mlkpro">Cashew</p>
+                      </div> 
+                  </a>
+              </div>
+            </div>
+      </div>
+        
+
+    <br><br>
+   
+    <div class="row container">
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'PE' %}">
+                <div class="goodnessseccont text-center">
+                  <img src="{% static 'app/images/product/Pecans.jpeg' %}" class="img-responsive center-block" alt="">
+                  <p class="mlkpro">Pecans</p>
+                </div> 
+            </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk buttermilk">
+            <a href="{% url 'category' 'SE' %}">
+                <div class="goodnessseccont text-center">
+                  <img src="{% static 'app/images/product/Seeds.jpg' %}" class="img-responsive center-block" alt="">
+                  <p class="mlkpro">Seeds</p>
+                </div> 
+            </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk buttermilk">
+            <a href="{% url 'category' 'DC' %}">
+                <div class="goodnessseccont text-center">
+                  <img src="{% static 'app/images/product/Dry-Coconut.jpg' %}" class="img-responsive center-block" alt="">
+                  <p class="mlkpro">Dry-Coconut</p>
+                </div> 
+            </a>
+        </div>
+      </div>
+    </div>  
+    
+    <br><br>
+
+    <div class="row container">
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'PE' %}">
+                <div class="goodnessseccont text-center">
+                  <img src="{% static 'app/images/product/Pecans.jpeg' %}" class="img-responsive center-block" alt="">
+                  <p class="mlkpro">Pecans</p>
+                </div> 
+            </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk buttermilk">
+            <a href="{% url 'category' 'CN' %}">
+                <div class="goodnessseccont text-center">
+                  <img src="{% static 'app/images/product/Corn-Nuts.jpg' %}" class="img-responsive center-block" alt="">
+                  <p class="mlkpro">Corn Nuts</p>
+                </div> 
+            </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+        <div class="goodnesssec buttermilk curdbgpro">
+            <a href="{% url 'category' 'PR' %}">
+                <div class="goodnessseccont text-center">
+                  <img src="{% static 'app/images/product/Prunes.jpeg' %}" class="img-responsive center-block" alt="">
+                  <p class="mlkpro">Prunes</p>
+                </div> 
+            </a>
+        </div>
+      </div>
+</div> 
+</div> 
+  <br/><br/><br/><br/>
+{% endblock main-content %}
+

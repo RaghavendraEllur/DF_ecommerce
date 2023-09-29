@@ -1,0 +1,48 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock title %}
+
+{% block banner_slider %}
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/a1.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/a2.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/a3.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/a4.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+  </div>
+{% endblock banner_slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">Why Choose Us?</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">When you choose Dry Fruits Traders, you're not just buying dry fruits; you're embarking on a journey towards a healthier and tastier lifestyle. Our products are perfect for snacking, gifting, or incorporating into your favorite recipes. Whether you're an athlete looking for a natural energy boost or someone with a sweet tooth seeking guilt-free indulgence, we have something for you.
+
+          Thank you for choosing Dry Fruits Traders as your trusted source for premium dry fruits. We look forward to serving you and being a part of your healthy, flavorful journey.
+          
+          For any inquiries, feedback, or assistance, please don't hesitate to contact us. We value your feedback and are always here to help.
+          
+          Discover the goodness of nature with Dry Fruits Traders  Where Quality Meets Taste!</p>
+    </div>
+    <br>
+    <h2 class="text-center"><u>Contact Us</u></h2>
+    <br>
+    <div class="row container">
+        <P class="fs-4 text-center">Address : Banglore</p>
+        <P class="fs-4 text-center">Contact : 9685321475</p>
+        <P class="fs-4 text-center">Email : dfproducts@gmail.com</p>
+    </div>
+</div>        
+<br><br>
+{% endblock main-content %}
